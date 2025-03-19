@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hera Heritage</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Spooky Background */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(128, 0, 128, 0.8)); /* Black and Purple Gradient */
+            color: white;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            animation: backgroundAnimation 5s infinite alternate;
+        }
+
+        /* Background Animation */
+        @keyframes backgroundAnimation {
+            0% { background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(128, 0, 128, 0.8)); }
+            50% { background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(75, 0, 130, 0.8)); }
+            100% { background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(128, 0, 128, 0.8)); }
+        }
+
+        h1 {
+            font-size: 50px;
+            color: #fff;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(255, 0, 255, 0.7); /* Spooky glowing effect */
+        }
+
+        p {
+            font-size: 24px;
+            margin-top: 20px;
+            text-shadow: 1px 1px 4px rgba(255, 0, 255, 0.7); /* Spooky glowing effect */
+        }
+
+        .motto {
+            font-size: 28px;
+            margin-top: 40px;
+            font-weight: bold;
+            color: #ff5959;
+            text-shadow: 2px 2px 5px rgba(255, 0, 255, 0.7); /* Spooky glowing effect */
+        }
+
+        .experience-section {
+            margin-top: 40px;
+            font-size: 20px;
+        }
+
+        .experience-input {
+            margin: 10px;
+            padding: 15px;
+            width: 80%;
+            font-size: 18px;
+            border-radius: 5px;
+            border: none;
+            background-color: #e0e0e0;
+            color: black;
+        }
+
+        .experience-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #ff5959;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0px 4px 15px rgba(255, 0, 255, 0.7); /* Spooky glowing effect */
+        }
+
+        .experience-button:hover {
+            background-color: #e04e4e;
+        }
+
+        .contact {
+            margin-top: 50px;
+            font-size: 18px;
+            text-shadow: 1px 1px 3px rgba(255, 0, 255, 0.6); /* Spooky glowing effect */
+        }
+
+        .contact a {
+            color: #ff5959;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+            color: #ff33ff;
+        }
+
+        .image-container {
+            margin-top: 40px;
+        }
+
+        .image-container img {
+            width: 300px;
+            height: 400px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 0, 255, 0.7); /* Spooky glowing effect */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <h1>Welcome to Hera Heritage</h1>
+
+    <!-- Image Section (Sad Person to Happy Person) -->
+    <div class="image-container">
+        <img src="sadperson.jpg" alt="Sad Person">
+        <p>To Happy Person</p>
+        <img src="happyperson.jpg" alt="Happy Person">
+    </div>
+
+    <!-- Welcome Message Section -->
+    <p>Welcome to my page! Click here and share your experience with others.</p>
+
+    <!-- Motto Section -->
+    <div class="motto">
+        <p>OUR MOTTO: Putting smiles on everyone's face makes a better society.</p>
+        <p>Let's be joyful together!</p>
+    </div>
+
+    <!-- Experience Sharing Section -->
+    <div class="experience-section">
+        <textarea class="experience-input" placeholder="Share your experience here..." rows="5"></textarea>
+        <br>
+        <button class="experience-button">Submit Experience</button>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="contact">
+        <p>Contact me at: <a href="mailto:heraheritage625@gmail.com">heraheritage625@gmail.com</a></p>
+    </div>
+
+</body>
+</html>
